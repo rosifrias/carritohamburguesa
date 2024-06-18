@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra de Hamburguesas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compra de Hamburguesas</h1>
+        <div class="menu">
+            <h2>Menú</h2>
+            <div class="item">
+                <h3>Hamburguesa Clásica</h3>
+                <p>$5.00</p>
+                <button onclick="addToCart('Hamburguesa Clásica', 5.00)">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <h3>Hamburguesa con Queso</h3>
+                <p>$6.00</p>
+                <button onclick="addToCart('Hamburguesa con Queso', 6.00)">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <h3>Hamburguesa BBQ</h3>
+                <p>$7.00</p>
+                <button onclick="addToCart('Hamburguesa BBQ', 7.00)">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="placeOrder()">Realizar Pedido</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
